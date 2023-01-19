@@ -1,7 +1,6 @@
+import static ui.UIMenu.*;
 public class Main {
     public static void main(String[] args) {
-        Doctor myDoctor = new Doctor("Angelica Madera");
-        myDoctor.name = "Alejandro Rodriguez";
-        myDoctor.showName();
+              showMenu();
     }
 }
