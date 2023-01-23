@@ -8,6 +8,8 @@ public class Main {
         System.out.println(myDoctor.speciality);
 
         Patient patient = new Patient("Carolina","caro@gmail.com");
+        patient.setWeight(54.6);
+        System.out.println(patient.getWeight());
 
     }
 }
