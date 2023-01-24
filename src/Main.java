@@ -11,5 +11,8 @@ public class Main {
         patient.setWeight(54.6);
         System.out.println(patient.getWeight());
 
+        patient.setPhoneNumber("12345678");
+        System.out.println(patient.getPhoneNumber());
+
     }
 }

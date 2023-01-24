@@ -61,7 +61,12 @@ public class Patient {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        if (phoneNumber.length()>8){
+            System.out.println("El numero telefonico debe ser de 8 digitos maxino");
+        } else if (phoneNumber.length()==8) {
+            this.phoneNumber = phoneNumber;
+        }
+
     }
 
     public String getTypeOfBlood() {
