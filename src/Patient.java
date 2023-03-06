@@ -1,72 +1,24 @@
-public class Patient {
-    int id;
-    private String name;
-    private String email, address, birthday, phoneNumber, typeOfBlood;
-    private double weight,height;
-
+public class Patient extends User {
+    private String birthday;
+    private String typeOfBlood;
+    private double weight;
+    private double height;
     Patient(String name, String email){
-        this.name=name;
-        this.email=email;
+        super(name, email);
     }
-        public void setWeight (double weight){
+    public void setWeight (double weight){
         this.weight= weight;
     }
 
     public String getWeight() {
         return this.weight + "Kg.";
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getBirthday() {
         return birthday;
     }
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length()>8){
-            System.out.println("El numero telefonico debe ser de 8 digitos maxino");
-        } else if (phoneNumber.length()==8) {
-            this.phoneNumber = phoneNumber;
-        }
-
     }
 
     public String getTypeOfBlood() {
