@@ -10,9 +10,13 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "11am");
 
+        System.out.println(myDoctor);
+
+        /*
+
         for (Doctor.AvailableAppointments aA: myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate()+" "+ aA.getTime());
-        }
+        }*/
 
         Patient patient = new Patient("Carolina","caro@gmail.com");
         patient.setWeight(54.6);
