@@ -45,4 +45,10 @@ public class Patient extends User {
         return super.toString() +"\nAge: "+birthday+"\nWight: "+getWeight()+
                 "\nHeight: "+ getHeight()+"\nBlood: "+typeOfBlood;
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente");
+        System.out.println("Ubicaion: Pediatria");
+    }
 }

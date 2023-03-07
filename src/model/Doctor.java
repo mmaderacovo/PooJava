@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Doctor extends User {
+
  private String speciality;
 
     public Doctor(String name,String email){
@@ -24,6 +25,12 @@ public class Doctor extends User {
     @Override
     public String toString() {
         return super.toString()+"\nSpeciality: "+speciality+"\nAvaliable: "+ availableAppointments.toString();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital: Crux Roja");
+        System.out.println("Departamento: Cancerologia");
     }
 
     public static class AvailableAppointments{
