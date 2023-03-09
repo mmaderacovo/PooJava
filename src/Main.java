@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
               //showMenu();
 
-        Doctor myDoctor = new Doctor("Angelica Madera", "Neurology");
+        Doctor myDoctor = new Doctor("Alejandra Madera", "Neurology");
         myDoctor.addAvailableAppointment(new Date(), "4am");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "11am");
@@ -17,6 +17,20 @@ public class Main {
 
         User user = new Doctor("Juan Quiroga","juan@juan");
         user.showDataUser();
+
+        User userPa = new Patient("Laury","Laury@laury");
+        userPa.showDataUser();
+
+        User user1 = new User("Mafe","mafe@mafe") {
+            @Override
+            public void showDataUser() {
+                System.out.println("\nPsicologa");
+                System.out.println("Institucion: UPB");
+                System.out.println("Consejeria");
+            }
+        };
+
+        user1.showDataUser();
 
         /*
 
