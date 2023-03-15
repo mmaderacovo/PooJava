@@ -8,16 +8,15 @@ import java.util.Date;
 public class Doctor extends User {
 
  private String speciality;
+ private ArrayList<AvailableAppointments> availableAppointments = new ArrayList<>();
 
     public Doctor(String name,String email){
         super(name, email);
     }
 
-    ArrayList<AvailableAppointments> availableAppointments = new ArrayList<>();
+
     public void addAvailableAppointment(String  date, String time){
-
-
-      availableAppointments.add(new AvailableAppointments(date,time));
+        availableAppointments.add(new AvailableAppointments(date,time));
     }
     public ArrayList<AvailableAppointments> getAvailableAppointments(){
         return availableAppointments;
@@ -57,10 +56,10 @@ public class Doctor extends User {
             this.id = id;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
-        public String getDate(String DATE){
+        public String getDate(){
             return format.format(date);
         }
 
